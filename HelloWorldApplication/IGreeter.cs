@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace HelloWorldApplication
 {
-    interface IGreeter
+    /// <summary>
+    /// IGreeter interface.
+    /// </summary>
+    public interface IGreeter
     {
         void WriteGreet(string greetContent);
     }

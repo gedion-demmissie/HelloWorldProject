@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldRepository", "Hel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldApplication", "HelloWorldApplication\HelloWorldApplication.csproj", "{08E796FF-3338-4944-B461-87D15512CB24}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldRepository.Tests", "HelloWorldRepository.Tests\HelloWorldRepository.Tests.csproj", "{7A41D44A-DCF9-400B-B1CC-1E2D9705BF18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{08E796FF-3338-4944-B461-87D15512CB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08E796FF-3338-4944-B461-87D15512CB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08E796FF-3338-4944-B461-87D15512CB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A41D44A-DCF9-400B-B1CC-1E2D9705BF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A41D44A-DCF9-400B-B1CC-1E2D9705BF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A41D44A-DCF9-400B-B1CC-1E2D9705BF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A41D44A-DCF9-400B-B1CC-1E2D9705BF18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,9 +10,16 @@ using System.Threading.Tasks;
 
 namespace HelloWorldApplication
 {
+    /// <summary>
+    /// The class containing the driver of the application as Main method.
+    /// </summary>
     class Program
     {
-       
+
+       /// <summary>
+       /// Main entry point for execution of the application.
+       /// </summary>
+       /// <param name="args"></param>
         static  void Main(string[] args)
         {
             GreetingOption greetingOption;
@@ -28,10 +35,17 @@ namespace HelloWorldApplication
             {
                 greetContent =  response.Content.ReadAsStringAsync().Result;
             }
-          
+            //Greet with target greeter object chosen from the configuration.
             greetorTo.Greet(greetContent);
 
         }
+
+        /// <summary>
+        /// Provides HttpClient instance for making Rest call.
+        /// </summary>
+        /// <param name="url"></param>
+        /// <param name="mediaType"></param>
+        /// <returns></returns>
         static HttpClient GetClient(string url, string mediaType)
         {
             HttpClient client = new HttpClient()
@@ -43,6 +57,11 @@ namespace HelloWorldApplication
             return client;
         }
 
+        /// <summary>
+        /// GreetorFactory that will provide Greeter instance based on the state of GreetingOption.
+        /// </summary>
+        /// <param name="greeetingOption"></param>
+        /// <returns></returns>
         static IGreeter GreeterFactory(GreetingOption greeetingOption)
         {
             if (greeetingOption == GreetingOption.Console)
@@ -57,6 +76,10 @@ namespace HelloWorldApplication
             return null;
         }
     }
+
+    /// <summary>
+    /// Enum for possible Greeting logic targets
+    /// </summary>
     enum GreetingOption {
         Console,
         Database
